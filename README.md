@@ -1,3 +1,99 @@
+# 🏛️ Gestión de Proyectos - Gobierno de El Salvador
+
+Sistema web para la gestión y seguimiento de proyectos institucionales, desarrollado con Laravel y MySQL.
+
+## 📋 Descripción
+
+Aplicación web que permite administrar proyectos gubernamentales, registrando información sobre fuentes de financiamiento y montos asignados. Incluye generación de reportes en PDF con formato oficial.
+
+## 🚀 Tecnologías utilizadas
+
+- **PHP 8.3** 
+- **Laravel 12**
+- **MySQL 8.4**
+- **Bootstrap 5**
+- **DomPDF** — Generación de reportes PDF
+- **Laragon** — Entorno de desarrollo local
+
+## ✨ Funcionalidades
+
+- ✅ Crear, listar, editar y eliminar proyectos (CRUD completo)
+- ✅ Validación de formularios
+- ✅ Generación de reporte PDF con formato oficial
+- ✅ Logo e identidad del Gobierno de El Salvador
+- ✅ Pie de página con copyright
+- ✅ Fecha y hora en zona horaria de El Salvador
+
+## 📁 Estructura de la base de datos
+
+Tabla `proyectos`:
+
+| Campo | Tipo | Descripción |
+|---|---|---|
+| id | INT | Identificador único |
+| NombreProyecto | VARCHAR | Nombre del proyecto |
+| fuenteFondos | VARCHAR | Fuente de financiamiento |
+| MontoPlanificado | DECIMAL | Monto total planificado |
+| MontoPatrocinado | DECIMAL | Monto patrocinado |
+| MontoFondosPropios | DECIMAL | Monto de fondos propios |
+| created_at | TIMESTAMP | Fecha de creación |
+| updated_at | TIMESTAMP | Fecha de actualización |
+
+## ⚙️ Instalación
+
+1. Clona el repositorio:
+```bash
+git clone https://github.com/AlonzzoGz/proyecto_final.git
+```
+
+2. Instala las dependencias:
+```bash
+composer install
+npm install
+```
+
+3. Copia el archivo de configuración:
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+
+4. Configura tu base de datos en `.env`:
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=proyecto_final
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+5. Ejecuta las migraciones:
+```bash
+php artisan migrate
+```
+
+6. Compila los assets:
+```bash
+npm run dev
+```
+
+## 📄 Reporte PDF
+
+El sistema genera un reporte PDF con:
+- Logo oficial del Gobierno de El Salvador
+- Nombre de la institución
+- Fecha y hora de generación
+- Tabla completa de proyectos
+- Pie de página con copyright
+
+## 👨‍💻 Autor
+
+Rodrigo Alonso Guzman
+Desarrollado como práctica del curso Herramientas de desarrollo web (Introducción a PHP y Laravel) impartida por la Escuela Superior de Innovacion y Tecnologia de El Salvador.
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
