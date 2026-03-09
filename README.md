@@ -87,10 +87,12 @@ El sistema genera un reporte PDF con:
 - Tabla completa de proyectos
 - Pie de página con copyright
 
-## 👨‍💻 Autor
+## 👤 Autor
 
-Rodrigo Alonso Guzman
-Desarrollado como práctica del curso Herramientas de desarrollo web (Introducción a PHP y Laravel) impartida por la Escuela Superior de Innovacion y Tecnologia de El Salvador.
+**Rodrigo Alonso Guzman**
+* **Carrera** Técnico Superior Universitario en Desarrollo de Software en Código Abierto
+* **Institución:** Escuela Superior de Innovación y Tecnología (ESIT), El Salvador.
+* **Proyecto:** Práctica de Gestión de Proyectos Gubernamentales.
 
 
 
